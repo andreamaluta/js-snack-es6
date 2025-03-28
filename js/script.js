@@ -86,4 +86,15 @@ for(let i = 0; i<squad.length; i++){
     squad[i].point = randomPoint();
     squad[i].foul = randomFoul();
 }
-console.log(squad);
+
+const finalSquad = [];
+
+for(let i = 0; i<squad.length; i++){
+    const newSquad = {
+        newName: squad[i].squadName,
+        newFoul: squad[i].foul,
+    }
+    finalSquad.push(newSquad);
+}
+
+console.log(finalSquad);
