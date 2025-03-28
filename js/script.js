@@ -44,3 +44,32 @@ for(let i = 0; i<bike.length; i++){
 console.log(minWeightBike);
 
 console.log(bike);
+
+console.log('-------------------------------------------------------------');
+
+// Snak 2
+
+const squad = [
+    {
+        squadName: 'Juventus',
+        point: 0,
+        foul: 0
+    },
+    {
+        squadName: 'Inter',
+        point: 0,
+        foul: 0
+    },
+    {
+        squadName: 'Milan',
+        point: 0,
+        foul: 0
+    },
+    {
+        squadName: 'Atalanta',
+        point: 0,
+        foul: 0
+    }
+]
+
+console.log(squad);
