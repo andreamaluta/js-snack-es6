@@ -73,3 +73,11 @@ const squad = [
 ]
 
 console.log(squad);
+
+const randomPoint = () =>{
+    return Math.floor(Math.random()*100)+1;
+}
+
+const randomFault = () =>{
+    return Math.floor(Math.random()*50)+1;
+}
