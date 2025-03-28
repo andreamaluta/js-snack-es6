@@ -78,6 +78,12 @@ const randomPoint = () =>{
     return Math.floor(Math.random()*100)+1;
 }
 
-const randomFault = () =>{
+const randomFoul = () =>{
     return Math.floor(Math.random()*50)+1;
 }
+
+for(let i = 0; i<squad.length; i++){
+    squad[i].point = randomPoint();
+    squad[i].foul = randomFoul();
+}
+console.log(squad);
