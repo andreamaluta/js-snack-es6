@@ -49,6 +49,7 @@ console.log('-------------------------------------------------------------');
 
 // Snak 2
 
+// creo l'array delle squadre 
 const squad = [
     {
         squadName: 'Juventus',
@@ -74,6 +75,7 @@ const squad = [
 
 console.log(squad);
 
+// creo due funzioni random, una per i punti e una per i falli
 const randomPoint = () =>{
     return Math.floor(Math.random()*100)+1;
 }
@@ -82,19 +84,26 @@ const randomFoul = () =>{
     return Math.floor(Math.random()*50)+1;
 }
 
+// assegno le due funzioni random ai valori delle chiavi punti e falli
 for(let i = 0; i<squad.length; i++){
     squad[i].point = randomPoint();
     squad[i].foul = randomFoul();
 }
 
+// creo un array vuoto che conterrà gli oggetti con solo nome e falli 
 const finalSquad = [];
 
+// ciclo l'array iniziale
 for(let i = 0; i<squad.length; i++){
+    // creo un nuovo oggetto e salvo dentro il nome della squadra e i falli
+    // prendendoli direttamente dal primo array
     const newSquad = {
         newName: squad[i].squadName,
         newFoul: squad[i].foul,
     }
+    // inserisco gli oggetti dentro l'array vuoto che ho creato in precedenza
     finalSquad.push(newSquad);
 }
 
+// stampo in console l'array finale
 console.log(finalSquad);
