@@ -1,4 +1,8 @@
+// snak 1: trovare la bici con il peso minore
+
+// creo l'array che contiene gli oggetti
 const bike = [
+    // tutti gli oggetti che rappresentano le bici
     {
         bikeName: 'Trek Domane AL 3',
         weight: 8.1,
@@ -21,12 +25,18 @@ const bike = [
     }
 ]
 
+// dichiaro la variabilw che contiene il primo peso
 let minWeight = bike[0].weight;
+// dichiaro la variabile che conterrà l'oggetto che ha il peso minore
 let minWeightBike;
 
+// ciclo per scorrere l'array
 for(let i = 0; i<bike.length; i++){
+    // controllo se il peso dell'oggetto è più piccolo del peso contenuto nella variabile minWeight
     if(bike[i].weight<minWeight){
+        // se più piccolo assegno a minWeight un nuovo valore
         minWeight = bike[i].weight;
+        // assegno l'oggetto che ha peso minore parziale
         minWeightBike = bike[i];
     }
 }
